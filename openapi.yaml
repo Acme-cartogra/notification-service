@@ -1,0 +1,24 @@
+openapi: "3.0.3"
+info:
+  title: "notification-service"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8103"
+paths:
+  "/notifications":
+    get:
+      summary: "List notifications"
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: "Create notification"
+      responses:
+        "200":
+          description: OK
+  "/notifications/{id}":
+    get:
+      summary: "Get notification by ID"
+      responses:
+        "200":
+          description: OK
